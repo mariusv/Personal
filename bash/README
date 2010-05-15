@@ -1,0 +1,9 @@
+Adduser in mysql script
+
+Add a database called bar with username tom and password jerry, enter:
+./script.sh bar tom jerry
+Add a database called bar with username tom, password jerry and allow remote access from 192.168.1.5 and 192.168.1.11, enter:
+./script.sh bar tom jerry '192.168.1.5|192.168.1.11'
+Add a database called bar with username tom, password jerry, allow remote access from 192.168.1.5 & 192.168.1.11, and only grant SELECT,INSERT,UPDATE,DELETE, enter:
+./script.sh bar tom jerry '192.168.1.5|192.168.1.11' 'SELECT,INSERT,UPDATE,DELETE'
+END OF MYSQL SCRIPT
